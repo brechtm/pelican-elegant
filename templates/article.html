@@ -38,6 +38,8 @@
             {% endif %}
 
             {{ article.content }}
+            <hr/>
+            {% include 'twitter.html' %}
             {% include 'comments.html' %}
             <aside>
             <hr/>
@@ -102,9 +104,6 @@
                 {% endfor %}
             </ul>
             {% endif %}
-            <p>
-            {% include "twitter.html" %}
-            </p>
             {% include 'social_links.html' %}
             {% include 'mailchimp.html' %}
         </div>
