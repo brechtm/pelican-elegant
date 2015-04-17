@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
 {% block title %}
-{{ page.title }} {%if page.subtitle %} - {{ page.subtitle }} {% endif %} · {{ super() }}
+{{ page.title|striptags|e }} {%if page.subtitle %} - {{ page.subtitle|striptags|e }} {% endif %} · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
 {% if page.summary %}
-{{ page.summary|striptags }}
+{{ page.summary|striptags|e }}
 {% endif %}
 {% endblock head_description %}
 
@@ -16,8 +16,8 @@
 <meta name="keywords" content="{{ page.keywords }}" />
 {% endif %}
 
-{% from '_includes/seo_metadata.html' import seo_metadata with context %}
-{{ seo_metadata(page) }}
+{% from '_includes/smo_metadata.html' import smo_metadata with context %}
+{{ smo_metadata(page) }}
 {% endblock meta_tags_in_head %}
 
 {% block content %}

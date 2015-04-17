@@ -6,6 +6,7 @@ Version 2.0 (under development)
 * Upgraded to Tipue Search 3.1
 * Support for `custom.css`
 * [Stat Counter Analytics ](http://statcounter.com/) support
+* Google Universal Analytics support
 * Support for custom icons for social profiles
 * Support for Pelican (>3.3) new metadata `modified`
 * Support for Social Media Tags
@@ -22,7 +23,8 @@ Performance
 
 * Performance improvement- 4x faster output
 * Reduce number of HTTP requests using `assets` plugin
-* Favicon is disabled by default. Set `USE_FAVICON` to true to enable it
+* Shortcut icons, like favicon, are disabled by default. Set
+  `USE_SHORTCUT_ICONS` to true to enable it
 
 Visual Style
 ------------
@@ -36,6 +38,7 @@ Visual Style
 * Time stamps in categories and tags pages are justified
 * Line number in code block is hidden on tablets and phones to save space for
   content
+* More sizes of image for Apple Touch icons
 * Fixed: Nested lists have different font sizes
 * Fixed: CSS style rules for literal block in reST is missing
 * Fixed: Long lines in code block will wrap to next line
@@ -44,17 +47,17 @@ Visual Style
 * Fixed: Articles under tag heading on tags page are not sorted
 * Fixed: URL scheme for blogs which are not published to the root folder
 * Fixed: Footer is always under the fold even on smaller length web pages
+* Fixed: Site Name and top navigation menu move to left on wide displays
 * Fixed: Page link is not active in the navbar if `SAVE_PAGE_AS` is not set to
   default
 
 Plugins
 -------
 
-* Support for Latex with the help of `latex` plugin
-* Related Posts support
 * Use `neighbor` plugin to show next and previous articles
 * Use `assets` plugin to minify CSS and JS files
 * Support for `share_post` plugin
+* Support for `related_posts` plugin
 * Support for `multi_part` plugin
 
 Behaviour
